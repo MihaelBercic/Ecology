@@ -85,4 +85,84 @@
         left: 0;
         right: 0;
     }
+
+    /* Body styles */
+body {
+  background-color: #f0f8f0; /* Light green */
+  color: #333; /* Dark gray */
+  font-family: Arial, sans-serif;
+}
+
+/* Heading styles */
+h2 {
+  color: #006400; /* Dark green */
+  font-size: 1.5rem;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* List styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Question styles */
+.question {
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+  background-color: #228b22; /* Forest green */
+  color: #fff; /* White */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #006400; /* Dark green */
+}
+
+/* Text input styles */
+input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc; /* Light gray */
+  border-radius: 3px;
+}
+
+/* Placeholder styles */
+input::placeholder {
+  color: #999; /* Light gray */
+}
+
+/* Description text styles */
+p {
+  color: #333; /* Dark gray */
+}
+
+/* Additional styles for visual aesthetics */
+#question_holder {
+  background-color: #f8f8f8; /* Off-white */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+#questions {
+  margin-bottom: 10px;
+}
+
+.svelte-announcer {
+  /* Styling for the screen reader text */
+  display: none;
+}
+
 </style>
