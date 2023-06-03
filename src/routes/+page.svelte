@@ -49,6 +49,8 @@
         currentScores = new Map(currentScores);
     }
 
+    $: sorted = [...currentScores.entries()].sort((a, b) => b[1] - a[1]);
+
 </script>
 <div id="question_holder">
     <ul id="questions">
@@ -62,9 +64,9 @@
     </ul>
     <button on:click={() => {moveQuestion(true)}}>Next</button>
     <button on:click={() => {moveQuestion(false)}}>Back</button>
-    <br>
+    <br><br>
     <div>
-        {#each [...currentScores.entries()] as entry}
+        {#each sorted as entry}
             <div style="font-family: monospace">{entry[0]} = {entry[1]}</div>
         {/each}
     </div>
