@@ -1,14 +1,17 @@
 <script lang="ts">
+    import {CERTIFICATE_MAP} from "$lib/Certificates";
+    import CertificateComponent from "$lib/components/CertificateComponent.svelte";
+    import FinalComponent from "$lib/components/FinalComponent.svelte";
     import QuestionComponent from "$lib/components/QuestionComponent.svelte";
     import {questions} from "$lib/questions";
     import {answerIdStore, answerStore} from "$lib/stores/answerStore";
     import type {Answer, Question} from "$lib/types/question";
-    import {Certificate} from "$lib/types/question";
+    import {Certificates} from "$lib/types/question";
     import {fade} from "svelte/transition"
 
     let currentQuestionIndex = 0;
     let questionStack: Question[] = [...questions.filter(q => /^\d+$/.test(q.id))];
-    let currentScores: Map<Certificate, number> = new Map();
+    let currentScores: Map<Certificates, number> = new Map();
 
     /**
      * Changes the actively visible question and adds any subsequently questions that are dependent on answers to the question stack.
@@ -52,6 +55,11 @@
     $: sorted = [...currentScores.entries()].sort((a, b) => b[1] - a[1]);
 
 </script>
+
+{#if currentQuestionIndex >= questionStack.length}
+    <FinalComponent bind:scores={sorted} />
+{/if}
+
 <div id="question_holder">
     <ul id="questions">
         {#each questionStack as question, i (question.id)}
@@ -67,12 +75,16 @@
     <br><br>
     <div>
         {#each sorted as entry}
-            <div style="font-family: monospace">{entry[0]} = {entry[1]}</div>
+            <div style="font-family: monospace">{entry[0]} = {entry[1]} = {JSON.stringify(CERTIFICATE_MAP.get(entry[0]))}}</div>
         {/each}
     </div>
 </div>
 
 <style>
+    :global(body) {
+        font-family: Arial, sans-serif;
+    }
+
     #questions {
         list-style: none;
         position: relative;

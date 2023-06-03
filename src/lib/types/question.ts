@@ -11,11 +11,11 @@ export type AnswerGroup = {
 
 export type Answer = {
     text: string,
-    points: [Certificate, number][],
+    points: [Certificates, number][],
     following_questions: string[]
 }
 
-export enum Certificate {
+export enum Certificates {
     IR_EPD = "IR - EPD",
     IR_FSC = "IR - FSC",
     IR_PEFC = "IR - PEFC",
@@ -36,4 +36,10 @@ export enum Certificate {
     ChinaEnvironmentalLabelling = "China Environmental Labelling",
     NaturePLUS = "natureplus",
     AustrianThingy = "Österreichische Umweltzeichen (UZ 07 und UZ 28)"
+}
+
+export type Certificate = {
+    id: string,
+    info: string,
+    url: string
 }
