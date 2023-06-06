@@ -70,8 +70,8 @@
             {/if}
         {/each}
     </ul>
-    <button on:click={() => {moveQuestion(true)}}>Next</button>
     <button on:click={() => {moveQuestion(false)}}>Back</button>
+    <button on:click={() => {moveQuestion(true)}}>Next</button>
     <br><br>
     <div>
         {#each sorted as entry}

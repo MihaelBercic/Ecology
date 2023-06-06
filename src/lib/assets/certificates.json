@@ -2,102 +2,143 @@
   {
     "id": "IR - EPD",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "EPD",
+    "logo":"EPD.png"
   },
   {
     "id": "IR - FSC",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "FSC",
+    "logo":"FSC.png"
   },
   {
     "id": "IR - PEFC",
     "info": "Information about this specific certificate balblas r aekalfajfefoije oqiwe qsdnkjxyc e asd sadwe ads",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "PEFC",
+    "logo":"PEFC.png"
   },
   {
     "id": "IR - Cradle to Cradle",
     "info": "Information about this specific certificate balblas r aekalfajfefoije oqiwe qsdnkjxyc e asd sadwe ads",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "Cradle to Cradle",
+    "logo" : "Cradle to Cradle.png"
+
   },
   {
     "id": "IR - CE",
     "info": "Information about this specific certificate balblas r aekalfajfefoije oqiwe qsdnkjxyc e asd sadwe ads",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "CE",
+    "logo" : "CE.png"
   },
   {
     "id": "UF - FSC",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "FSC",
+    "logo" : "FSC.jpeg"
   },
   {
     "id": "IR - HEN",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "HEN",
+    "logo" : "HEN.png"
   },
   {
     "id": "IR - ETA",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "ETA",
+    "logo" : "ETA.png"
   },
   {
     "id": "UF - PEFC",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "PEFC",
+    "logo" : "PEFC.png"
   },
   {
     "id": "Nordic Swan",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "Nordic Swan",
+    "logo" : "nordic swan.svg"
   },
   {
     "id": "Rainforest Alliance Certified",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "Rainforest Alliance Certified",
+    "logo" : "rainforest_alliance.png"
   },
   {
     "id": "EMAS",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "EMAS",
+    "logo" : "EMAS.png"
   },
   {
     "id": "CETEM - EU Ecolabel",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "EU Ecolabel",
+    "logo" : "EU_Ecolabel_logo.png"
   },
   {
     "id": "CETEM - BLUE angle",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "BLUE angle",
+    "logo" : "BLUE_ANGEL.png"
   },
   {
     "id": "CETEM - OEKOTEX",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "OEKOTEX",
+    "logo" : "OEKOTEX.png"
   },
   {
     "id": "ISO14001",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "ISO14001",
+    "logo" : ""
   },
   {
     "id": "Fairtrade",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "Fairtrade",
+    "logo" : ""
   },
   {
     "id": "China Environmental Labelling",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "China Environmental Labelling",
+    "logo" : ""
   },
   {
     "id": "natureplus",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "Natureplus",
+    "logo" : ""
   },
   {
     "id": "Österreichische Umweltzeichen (UZ 07 und UZ 28)",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu"
+    "url": "https://innorenew.eu",
+    "name" : "Österreichische Umweltzeichen (UZ 07 und UZ 28)",
+    "logo" : ""
   }
 ]
 
