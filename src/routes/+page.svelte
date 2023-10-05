@@ -1,31 +1,60 @@
 <script lang="ts">
-    import {CERTIFICATE_MAP} from "$lib/Certificates";
-    import CertificateComponent from "$lib/components/CertificateComponent.svelte";
     import FinalComponent from "$lib/components/FinalComponent.svelte";
     import QuestionComponent from "$lib/components/QuestionComponent.svelte";
     import {questions} from "$lib/questions";
-    import {answerIdStore, answerStore} from "$lib/stores/answerStore";
+    import {answerIdStore, answerStore, inputAnswerStore} from "$lib/stores/answerStore";
     import type {Answer, Question} from "$lib/types/question";
     import {Certificates} from "$lib/types/question";
     import {fade} from "svelte/transition"
+    import type {ProgressDTO} from "$lib/types/progress";
+
+    let questionnaireId: number | undefined
 
     let currentQuestionIndex = 0;
     let questionStack: Question[] = [...questions.filter(q => /^\d+$/.test(q.id))];
     let currentScores: Map<Certificates, number> = new Map();
+    let answerResults: Map<number, String[]> = new Map();
 
     /**
      * Changes the actively visible question and adds any subsequently questions that are dependent on answers to the question stack.
      * @param forward
      */
     function moveQuestion(forward: boolean) {
-        currentQuestionIndex += forward ? 1 : -1;
-        if (forward) {
+        const currentlyAnsweredQuestion = questionStack[currentQuestionIndex];
+        if (!currentlyAnsweredQuestion) {
+            if (forward) return
+            else {
+                currentQuestionIndex += -1
+                return;
+            }
+        }
+
+        const otherQuestionId = `${currentlyAnsweredQuestion.id}-other`;
+        const otherAnswer = $inputAnswerStore[otherQuestionId];
+        const answerGroups = currentlyAnsweredQuestion.answerGroups.flatMap(group => group.answers);
+        let currentAnswers = $answerStore.filter(answer => answerGroups.includes(answer));
+        if (otherAnswer) currentAnswers.push(otherAnswer);
+
+        answerResults[currentlyAnsweredQuestion.id] = currentAnswers.map(answer => answer.text);
+        const progressPercentage = ((currentQuestionIndex + 1) * 100) / (questions.length);
+        const progressUpdate: ProgressDTO = {id: questionnaireId, progress: progressPercentage, answers: answerResults};
+
+        if (forward && currentQuestionIndex <= questions.length) {
+            fetch("/progress", {
+                method: "PUT",
+                body: JSON.stringify(progressUpdate)
+            }).then(async (data) => {
+                questionnaireId = parseInt(await data.text())
+            })
+
             const questionsToAdd: Question[] = $answerStore
                 .map(answer => questions.filter(question => answer.following_questions.includes(question.id)))
                 .flat();
             questionStack.splice(currentQuestionIndex, 0, ...questionsToAdd);
             questionStack = [...new Set([...questionStack])];
-        }
+            if (questionStack.length > 0) currentQuestionIndex += 1;
+        } else if (!forward) currentQuestionIndex -= 1
+        currentQuestionIndex = Math.max(0, currentQuestionIndex);
     }
 
     /**
@@ -57,7 +86,7 @@
 </script>
 
 {#if currentQuestionIndex >= questionStack.length}
-    <FinalComponent bind:scores={sorted} />
+    <FinalComponent bind:scores={sorted}/>
 {/if}
 
 <div id="question_holder">

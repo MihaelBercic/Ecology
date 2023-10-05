@@ -11,5 +11,5 @@ export function inputAnswerChanged(questionId: string, value: Answer) {
         answers[questionId] = value;
         return answers;
     })
-    console.log(`${questionId} => ${value}`)
+    console.log(`${questionId} => ${value.text}`)
 }
