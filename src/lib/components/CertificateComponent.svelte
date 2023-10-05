@@ -6,10 +6,12 @@
 
 <a href={certificate.url}>
     <div class="certificate">
-        <h3>{certificate.id}</h3>
+        <h3>{certificate.name}</h3>
+        <img id="logos" src="{certificate.logo}"> 
         <div id="information">{certificate.info}</div>
     </div>
 </a>
+
 
 <style>
     /* Body styles */
@@ -36,6 +38,12 @@
 
     p {
         color: #E62D0FFF;
+    }
+    #logos{
+        width:60px;
+        display:block;
+        margin:auto;
+        padding-bottom: 10px;
     }
 
 </style>

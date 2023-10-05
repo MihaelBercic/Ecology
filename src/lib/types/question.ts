@@ -41,5 +41,7 @@ export enum Certificates {
 export type Certificate = {
     id: string,
     info: string,
-    url: string
+    url: string,
+    name: string,
+    logo:string
 }
