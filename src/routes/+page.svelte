@@ -72,12 +72,14 @@
     </ul>
     <button on:click={() => {moveQuestion(false)}}>Back</button>
     <button on:click={() => {moveQuestion(true)}}>Next</button>
+    <!--
     <br><br>
     <div>
         {#each sorted as entry}
             <div style="font-family: monospace">{entry[0]} = {entry[1]} = {JSON.stringify(CERTIFICATE_MAP.get(entry[0]))}}</div>
         {/each}
     </div>
+    -->
 </div>
 
 <style>
