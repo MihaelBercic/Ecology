@@ -5,7 +5,6 @@
     import {answerIdStore, answerStore, inputAnswerStore} from "$lib/stores/answerStore";
     import type {Answer, Question} from "$lib/types/question";
     import {Certificates} from "$lib/types/question";
-    import {fade} from "svelte/transition"
     import type {ProgressDTO} from "$lib/types/progress";
 
     let questionnaireId: number | undefined
@@ -21,13 +20,11 @@
      */
     function moveQuestion(forward: boolean) {
         const currentlyAnsweredQuestion = questionStack[currentQuestionIndex];
-        if (!currentlyAnsweredQuestion) {
-            if (forward) return
-            else {
-                currentQuestionIndex += -1
-                return;
-            }
-        }
+        const oldIndex = currentQuestionIndex
+        currentQuestionIndex += (forward ? 1 : -1)
+        currentQuestionIndex = Math.max(0, currentQuestionIndex)
+
+        if (!currentlyAnsweredQuestion) return
 
         const otherQuestionId = `${currentlyAnsweredQuestion.id}-other`;
         const otherAnswer = $inputAnswerStore[otherQuestionId];
@@ -36,25 +33,21 @@
         if (otherAnswer) currentAnswers.push(otherAnswer);
 
         answerResults[currentlyAnsweredQuestion.id] = currentAnswers.map(answer => answer.text);
-        const progressPercentage = ((currentQuestionIndex + 1) * 100) / (questions.length);
+        const progressPercentage = (currentQuestionIndex * 100) / (questions.length);
         const progressUpdate: ProgressDTO = {id: questionnaireId, progress: progressPercentage, answers: answerResults};
-
         if (forward && currentQuestionIndex <= questions.length) {
+            const questionsToAdd: Question[] = $answerStore
+                .map(answer => questions.filter(question => answer.following_questions.includes(question.id)))
+                .flat().filter(Boolean);
+            questionStack.splice(currentQuestionIndex, 0, ...questionsToAdd);
+            questionStack = [...new Set([...questionStack])];
             fetch("/progress", {
                 method: "PUT",
                 body: JSON.stringify(progressUpdate)
             }).then(async (data) => {
                 questionnaireId = parseInt(await data.text())
             })
-
-            const questionsToAdd: Question[] = $answerStore
-                .map(answer => questions.filter(question => answer.following_questions.includes(question.id)))
-                .flat();
-            questionStack.splice(currentQuestionIndex, 0, ...questionsToAdd);
-            questionStack = [...new Set([...questionStack])];
-            if (questionStack.length > 0) currentQuestionIndex += 1;
-        } else if (!forward) currentQuestionIndex -= 1
-        currentQuestionIndex = Math.max(0, currentQuestionIndex);
+        }
     }
 
     /**
@@ -83,33 +76,32 @@
 
     $: sorted = [...currentScores.entries()].sort((a, b) => b[1] - a[1]);
 
+    $: console.log(questionStack.length)
+
 </script>
 
 {#if currentQuestionIndex >= questionStack.length}
     <FinalComponent bind:scores={sorted}/>
+{:else}
+
+    <div id="question_holder">
+        <ul id="questions">
+            <QuestionComponent bind:question={questionStack[currentQuestionIndex]} {on_select}/>
+            {currentQuestionIndex}
+        </ul>
+        <button on:click={() => {moveQuestion(false)}}>Back</button>
+        <button on:click={() => {moveQuestion(true)}}>Next</button>
+        <!--
+        <br><br>
+        <div>
+            {#each sorted as entry}
+                <div style="font-family: monospace">{entry[0]} = {entry[1]} = {JSON.stringify(CERTIFICATE_MAP.get(entry[0]))}}</div>
+            {/each}
+        </div>
+        -->
+    </div>
 {/if}
 
-<div id="question_holder">
-    <ul id="questions">
-        {#each questionStack as question, i (question.id)}
-            {#if i === currentQuestionIndex}
-                <li class="question" in:fade>
-                    <QuestionComponent question={question} {on_select}/>
-                </li>
-            {/if}
-        {/each}
-    </ul>
-    <button on:click={() => {moveQuestion(false)}}>Back</button>
-    <button on:click={() => {moveQuestion(true)}}>Next</button>
-    <!--
-    <br><br>
-    <div>
-        {#each sorted as entry}
-            <div style="font-family: monospace">{entry[0]} = {entry[1]} = {JSON.stringify(CERTIFICATE_MAP.get(entry[0]))}}</div>
-        {/each}
-    </div>
-    -->
-</div>
 
 <style>
     :global(body) {

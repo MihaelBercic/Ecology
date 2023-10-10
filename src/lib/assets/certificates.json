@@ -1,144 +1,123 @@
 [
   {
-    "id": "IR - EPD",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "id": "EPD",
+    "info": "Comprehensively reporting life cycle assessment results.",
+    "url": "https://www.environdec.com/",
     "name" : "EPD",
     "logo":"EPD.png"
   },
   {
-    "id": "IR - FSC",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "id": "FSC",
+    "info": "Certifying sustainable managed forests and traceability of wood and other forests derived products.",
+    "url": "https://fsc.org/",
     "name" : "FSC",
-    "logo":"FSC.png"
+    "logo":"FSC.jpg"
   },
   {
-    "id": "IR - PEFC",
-    "info": "Information about this specific certificate balblas r aekalfajfefoije oqiwe qsdnkjxyc e asd sadwe ads",
-    "url": "https://innorenew.eu",
+    "id": "PEFC",
+    "info": "Endorsement and recognition of national forest certification systems.",
+    "url": "https://www.pefc.org/",
     "name" : "PEFC",
     "logo":"PEFC.png"
   },
   {
-    "id": "IR - Cradle to Cradle",
-    "info": "Information about this specific certificate balblas r aekalfajfefoije oqiwe qsdnkjxyc e asd sadwe ads",
-    "url": "https://innorenew.eu",
+    "id": "CE",
+    "info": "Affirms the good's conformity with European health, safety, and environmental protection standards.",
+    "url": "https://single-market-economy.ec.europa.eu/single-market/ce-marking_en",
+    "name" : "CE",
+    "logo" : "CE.png"
+  },
+  {
+    "id": "Cradle to Cradle",
+    "info": "Requires achievement across multiple attributes.",
+    "url": "https://c2ccertified.org/",
     "name" : "Cradle to Cradle",
     "logo" : "Cradle to Cradle.png"
 
   },
   {
-    "id": "IR - CE",
-    "info": "Information about this specific certificate balblas r aekalfajfefoije oqiwe qsdnkjxyc e asd sadwe ads",
-    "url": "https://innorenew.eu",
-    "name" : "CE",
-    "logo" : "CE.png"
-  },
-  {
-    "id": "UF - FSC",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
-    "name" : "FSC",
-    "logo" : "FSC.jpeg"
-  },
-  {
-    "id": "IR - HEN",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "id": "HEN",
+    "info": "To demonstrate that products, services, or processes comply with relevant EU legislation.",
+    "url": "https://single-market-economy.ec.europa.eu/single-market/european-standards/harmonised-standards_en",
     "name" : "HEN",
     "logo" : "HEN.png"
   },
   {
-    "id": "IR - ETA",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "id": "ETA",
+    "info": "Alternative for construction products not covered by hEN.",
+    "url": "https://single-market-economy.ec.europa.eu/sectors/construction/construction-products-regulation-cpr/european-assessment-documents-and-european-technical-assessments_en",
     "name" : "ETA",
     "logo" : "ETA.png"
   },
   {
-    "id": "UF - PEFC",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
-    "name" : "PEFC",
-    "logo" : "PEFC.png"
-  },
-  {
     "id": "Nordic Swan",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "info": "Certify strict environmental requirements in all relevant phases of a product's life cycle.",
+    "url": "https://www.nordic-swan-ecolabel.org/",
     "name" : "Nordic Swan",
     "logo" : "nordic swan.svg"
   },
   {
     "id": "Rainforest Alliance Certified",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "info": "For products that respects the three pillars of sustainability: social, economic, and environmental.",
+    "url": "https://www.rainforest-alliance.org/",
     "name" : "Rainforest Alliance Certified",
     "logo" : "rainforest_alliance.png"
   },
   {
-    "id": "EMAS",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "id": "EU PEF / OEF",
+    "info": "The European Commission has proposed the Product Environmental Footprint and Organisation Environmental Footprint methods as a common way of measuring environmental performance.",
+    "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en",
     "name" : "EMAS",
     "logo" : "EMAS.png"
   },
   {
-    "id": "CETEM - EU Ecolabel",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "id": "EU Ecolabel",
+    "info": "Environmental excellence of product and services.",
+    "url": "https://environment.ec.europa.eu/topics/circular-economy/eu-ecolabel-home_en",
     "name" : "EU Ecolabel",
     "logo" : "EU_Ecolabel_logo.png"
   },
   {
-    "id": "CETEM - BLUE angle",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "id": "BLUE angle",
+    "info": "The German federal government ecolabel certifies environmentally sound products and services.",
+    "url": "https://www.blauer-engel.de/",
     "name" : "BLUE angle",
     "logo" : "BLUE_ANGEL.png"
   },
   {
-    "id": "CETEM - OEKOTEX",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "id": "OEKOTEX",
+    "info": "Products with textiles tested for harmful substances\nRainforest Alliance Certified - for products that respects the three pillars of sustainability: social, economic, and environmental.",
+    "url": "https://www.oeko-tex.com/",
     "name" : "OEKOTEX",
     "logo" : "OEKOTEX.png"
   },
   {
     "id": "ISO14001",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "info": "International standard for environmental management system (EMS) of organisations.",
+    "url": "https://www.iso.org/iso-14001-environmental-management.html",
     "name" : "ISO14001",
     "logo" : ""
   },
   {
-    "id": "Fairtrade",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
-    "name" : "Fairtrade",
-    "logo" : ""
+    "id": "EMAS",
+    "info": "Premium EMS instrument from the European Commission.",
+    "url": "https://green-business.ec.europa.eu/eco-management-and-audit-scheme-emas/about-emas_en",
+    "name" : "EMAS",
+    "logo" : "EMAS.jpg"
   },
   {
-    "id": "China Environmental Labelling",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
-    "name" : "China Environmental Labelling",
-    "logo" : ""
-  },
-  {
-    "id": "natureplus",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "id": "Carbon Trust Product / Organisation Footprint Certification",
+    "info": "Quantified and certified carbon footprint of products or organisations.",
+    "url": "https://www.carbontrust.com/what-we-do/assurance-and-labelling/product-carbon-footprint-label",
     "name" : "Natureplus",
-    "logo" : ""
+    "logo" : "carbon.svg"
   },
   {
     "id": "Österreichische Umweltzeichen (UZ 07 und UZ 28)",
-    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "url": "https://innorenew.eu",
+    "info": "The governmental ecolabel based on transparent criteria and sound third-party verification.",
+    "url": "https://www.umweltzeichen.at/",
     "name" : "Österreichische Umweltzeichen (UZ 07 und UZ 28)",
-    "logo" : ""
+    "logo" : "austrian.jpg"
   }
 ]
 
