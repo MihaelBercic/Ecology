@@ -2,14 +2,12 @@
     import type {Certificate} from "$lib/types/question";
 
     export let certificate: Certificate
+    export let order: number = 1
 </script>
 
-<a href={certificate.url}>
-    <div class="certificate">
-        <h3>{certificate.name}</h3>
-        <img id="logos" src="{certificate.logo}"> 
-        <div id="information">{certificate.info}</div>
-    </div>
+<a class="certificate" href={certificate.url}>
+    <div id="title"><h5><span>{order}.</span> {certificate.name}</h5><img id="logos" src="{certificate.logo}"></div>
+    <div id="information">{certificate.info}</div>
 </a>
 
 
@@ -17,33 +15,46 @@
     /* Body styles */
     .certificate {
         display: inline-block;
-        vertical-align: top;
-        margin: .5rem;
+        text-decoration: none;
         max-width: 350px;
         background-color: #f0f8f0; /* Light green */
         color: #333; /* Dark gray */
-        font-family: Arial, sans-serif;
         border: 3px solid #006400; /* Dark green */
         border-radius: 3px;
-        padding: .5rem 1rem;
+        padding: .25rem 1rem;
+    }
+
+    .certificate:hover {
+        background-color: #bfe1bf;
+    }
+
+    .certificate:hover #title {
+        padding-left: .5em;
+        padding-right: .5em;
     }
 
     /* Heading styles */
-    h3 {
+    #title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         color: #006400; /* Dark green */
         font-size: 1.5rem;
-        padding-bottom: .1rem;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
+        padding: .5em 0;
     }
 
-    p {
-        color: #E62D0FFF;
+    h5 {
+        margin: 0;
     }
-    #logos{
-        width:60px;
-        display:block;
-        margin:auto;
-        padding-bottom: 10px;
+
+    #information {
+        padding: 1em 0;
+    }
+
+    #logos {
+        max-height: 2em;
+        display: inline-block;
     }
 
 </style>

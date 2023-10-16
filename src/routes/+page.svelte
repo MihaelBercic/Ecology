@@ -87,7 +87,7 @@
     <div id="question_holder">
         <ul id="questions">
             <QuestionComponent bind:question={questionStack[currentQuestionIndex]} {on_select}/>
-            {currentQuestionIndex}
+            {currentQuestionIndex + 1} / {questions.length}
         </ul>
         <button on:click={() => {moveQuestion(false)}}>Back</button>
         <button on:click={() => {moveQuestion(true)}}>Next</button>
